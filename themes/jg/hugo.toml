@@ -3,21 +3,27 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 
 [[menus.main]]
-name = 'Home'
-pageRef = '/'
+name = 'About'
+pageRef = '/about'
 weight = 10
 
 [[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
+name = 'Paintings'
+pageRef = '/paintings'
 weight = 20
 
 [[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
+name = 'Exhibitions'
+pageRef = '/exhibitions'
 weight = 30
 
+[[menus.main]]
+name = 'Contact'
+pageRef = '/contact'
+weight = 30
+
+
 [module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
