@@ -1,2 +1,9 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<h1 class="m-3">{{ site.Title }}</h1>
+<ul class="flex">
+  {{ range .Site.Menus.main }}
+    <li>
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+  {{ end }}
+</ul>
+
