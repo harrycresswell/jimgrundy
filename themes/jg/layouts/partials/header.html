@@ -1,9 +1,13 @@
-<h1 class="m-3">{{ site.Title }}</h1>
-<ul class="flex">
-  {{ range .Site.Menus.main }}
-    <li>
-      <a href="{{ .URL }}">{{ .Name }}</a>
-    </li>
-  {{ end }}
-</ul>
+<header class="h-36">
+  <nav class="flex items-center justify-between h-full">
+    <h1 class="m-3 text-3xl">{{ site.Title }}</h1>
+    <ul class="flex">
+      {{ range .Site.Menus.main }}
+        <li class="mx-3 first:ml-0 last:mr-0">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
 

@@ -1,1 +1,18 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<footer class="w-full">
+  <div class="w-full flex justify-between pt-10 items-center">
+    <nav class="text-base">
+      <ul class="md:flex">
+        {{ range .Site.Menus.main }}
+          <li class="md:mx-3 md:first:ml-0 last:mr-0">
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+    <img src="/images/instagram-icon.svg" alt="Instagram icon for Jim Grundy's Instagram page">
+  </div>
+  <div class="md:flex justify-between text-sm mt-10 pb-6">
+    <p>We respect your privacy</p>
+    <p>©️JimGrundy{{ now.Year }}. All rights reserved.</p>
+  </div>
+</footer>

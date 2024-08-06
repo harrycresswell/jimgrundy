@@ -1,22 +1,76 @@
-body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+@import "abstracts/index.scss";
+@import "components/index.scss";
+
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+
+html {
+  box-sizing: border-box;
 }
 
-header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
+
 
 a {
-  color: #00e;
-  text-decoration: none;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove default padding and list style */
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  color: #000;
+  font-family: var(--font-base);
+  font-size: var(--font-size-md);
+  font-weight: 400;
 }
