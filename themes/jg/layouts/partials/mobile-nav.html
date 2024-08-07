@@ -1,0 +1,11 @@
+<nav class="offscreen-nav">
+  <ul class="offscreen-nav-links pt-16 text-right mt-4">
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">
+        <li class="pr-3">
+          {{ .Name }}
+        </li>
+      </a>
+    {{ end }}
+  </ul>
+</nav>

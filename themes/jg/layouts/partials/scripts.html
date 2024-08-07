@@ -1,0 +1,6 @@
+{{ $main := resources.Get "js/mobile-nav.js" }}
+
+{{ $script := slice $main | resources.Concat "app.js" }}
+
+<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}
+"></script>

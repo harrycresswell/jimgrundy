@@ -6,7 +6,14 @@ module.exports = {
     `${themeDir}/content/**/*.md`
   ],
   theme: {
-    extend: {}
+    extend: {
+      backgroundColor: theme => ({
+
+        ...theme('colors'),
+
+        'highlight': '#F6F6F6',
+      })
+    }
   },
   variants: {},
   plugins: []

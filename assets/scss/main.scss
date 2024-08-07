@@ -22,7 +22,6 @@ html {
   line-height: inherit;
 }
 
-
 a {
   text-decoration: inherit;
   color: inherit;
@@ -35,7 +34,6 @@ h2,
 h3,
 h4,
 p,
-ul[class],
 ol[class],
 li,
 figure,
@@ -46,10 +44,9 @@ dd {
   margin: 0;
 }
 
-/* Remove default padding and list style */
+/* Remove default list style */
 ul[class],
 ol[class] {
-  padding: 0;
   list-style: none;
 }
 
@@ -62,10 +59,6 @@ picture {
 
 figure {
   margin: 0;
-}
-
-[hidden] {
-  display: none !important;
 }
 
 body {
