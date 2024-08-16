@@ -1,4 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Jim Grundy'
 theme = 'jg'
+[params]
+css = "/css/main.css"

@@ -1,25 +1,25 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Jim Grundy'
 
 [[menus.main]]
 name = 'About'
-pageRef = '/about'
+pageRef = '/page/about'
 weight = 10
 
 [[menus.main]]
 name = 'Paintings'
-pageRef = '/paintings'
+pageRef = '/page/paintings'
 weight = 20
 
 [[menus.main]]
 name = 'Exhibitions'
-pageRef = '/exhibitions'
+pageRef = '/page/exhibitions'
 weight = 30
 
 [[menus.main]]
 name = 'Contact'
-pageRef = '/contact'
+pageRef = '/page/contact'
 weight = 30
 
 
