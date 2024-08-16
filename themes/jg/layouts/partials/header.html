@@ -1,6 +1,8 @@
 <header class="h-20 md:h-36">
   <nav class="flex items-center justify-between h-full">
-    <h1 class="text-3xl">{{ site.Title }}</h1>
+    <a href="/">
+      <h1 class="text-3xl">{{ site.Title }}</h1>
+    </a>
     <ul class="md:flex">
       {{ range .Site.Menus.main }}
         <li class="mx-3 first:ml-0 last:mr-0">
