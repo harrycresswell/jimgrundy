@@ -501,6 +501,9 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.absolute {
+  position: absolute;
+}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -509,8 +512,27 @@ video {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.mr-6 {
+  margin-right: 1.5rem;
+}
 .mt-10 {
   margin-top: 2.5rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
+.mt-14 {
+  margin-top: 3.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-20 {
+  margin-top: 5rem;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -535,6 +557,18 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 253 252 / var(--tw-bg-opacity));
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
@@ -569,6 +603,17 @@ video {
 .last\:mr-0:last-child {
   margin-right: 0px;
 }
+@media (min-width: 640px) {
+
+  .sm\:w-3\/4 {
+    width: 75%;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
 @media (min-width: 768px) {
 
   .md\:mx-24 {
@@ -589,7 +634,22 @@ video {
     height: 9rem;
   }
 
+  .md\:w-2\/4 {
+    width: 50%;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:first\:ml-0:first-child {
     margin-left: 0px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 }
