@@ -16,8 +16,8 @@
 
 
   </head>
-  <body class="mx-2 md:mx-24">
-    <header class="h-20 md:h-36">
+  <body class="">
+    <header class="h-20 md:h-36 mx-2 md:mx-24 ">
   <nav class="flex items-center justify-between h-full">
     <a href="/">
       <h1 class="text-3xl">Jim Grundy</h1>
@@ -80,13 +80,54 @@
   </ul>
 </nav>
   
-    <main>
+    <main class="mt-12">
       
+  <section>
+    <div class="md:flex mx-2 md:mx-24 ">
+      
+      <img src="/images/home-1.jpg" class="md:w-2/4 object-cover" alt="Jim at Art fair">
+      
+      <img src="/images/home-2.jpg" class="md:w-2/4 object-cover" alt="Jim at Art fair">
+    </div>
+  </section>
   
+    <div class="sm:w-3/4 lg:w-1/2 text-base sm:text-xl md:text-2xl my-32 mx-2 md:mx-24 ">
+      <p>Jim Grundy creates abstract paintings inspired by the natural and man made landscape. Compositions are mapped out with mathematical precision but with a lightness of touch, as washes of intense colour and gestural marks counterbalance the hard edges.</p>
+
+    </div>
+  
+  <section class="email-capture bg-background py-24 ">
+  <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="flow validate mx-2 md:mx-24" target="_blank">
+      <h2>Sign up to receive news and notifications about exhibitions</h2>
+      <div class="md:flex form mt-20">
+        <div class="md:mr-6">
+          <label for="mce-NAME" class="block">Name</label>
+          <input type="text" name="NAME" class=" w-full form-input text mt-2" id="mce-NAME" value="" placeholder="Jim">
+        </div>
+        <div class="mt-4 md:mt-0 md:mr-6">
+          <label for="mce-EMAIL"class="block">Email</label>
+          <input type="email" name="EMAIL" class="w-full required email form-input mt-2 focus-visible:border-sky-500" id="mce-EMAIL" value="" placeholder="jim@jimgrundy.co.uk" required="">
+        </div>
+        <div id="mce-responses">
+          <div class="response" id="mce-error-response" style="display: none;"></div>
+          <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div>
+        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+          /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+          <input type="text" name="b_88fa2cf1725fc94b694967987_7303fa13bc" tabindex="-1" value="">
+        </div>
+        <div>
+          <label class="block invisible" for="subscribe">Subscribe</label>
+          <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button-submit w-full mt-2" value="Sign up">
+        </div>
+      </div>
+  </form>
+</section>
+
 
     </main>
-    <footer class="w-full">
-  <div class="w-full flex justify-between pt-10 items-center">
+    <footer class="mt-14 mx-2 md:mx-24">
+  <div class="flex justify-between pt-10 items-center">
     <nav class="text-base">
       <ul class="md:flex">
         
@@ -124,3 +165,5 @@
 "></script>
 </body>
 </html>
+
+

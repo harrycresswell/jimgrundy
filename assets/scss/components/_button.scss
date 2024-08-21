@@ -1,0 +1,11 @@
+.button-submit {
+  font-size: var(--font-size-base);
+  padding: 14px 40px;
+  background-color: var(--color-button);
+  color: var(--color-white);
+}
+
+.button-submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

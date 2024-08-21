@@ -12,6 +12,7 @@ module.exports = {
         ...theme('colors'),
 
         'highlight': '#F6F6F6',
+        'background': '#F5FDFC'
       })
     }
   },
