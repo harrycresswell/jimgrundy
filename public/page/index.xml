@@ -34,7 +34,7 @@
       <link>http://localhost:1313/page/about/</link>
       <pubDate>Mon, 05 Aug 2024 16:23:33 +0100</pubDate>
       <guid>http://localhost:1313/page/about/</guid>
-      <description></description>
+      <description>{{ &amp;lt; intro &amp;gt; }} Born in Leicester, Jim attended Maidstone College of Art in the late 70s and developed his personal art practice alongside a career in art installation and management, including 22 years at the Tate.&#xA;He is now working as a full time artist from his south London studio. {{ &amp;lt; /intro &amp;gt; }}</description>
     </item>
   </channel>
 </rss>
