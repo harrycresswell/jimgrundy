@@ -92,6 +92,10 @@ header nav ul {
   background-color: var(--color-button);
   color: var(--color-white); }
 
+.button-submit:hover {
+  opacity: 0.8;
+  cursor: pointer; }
+
 .form {
   font-size: var(--font-size-base); }
 
@@ -99,6 +103,12 @@ header nav ul {
   padding: 14px 32px;
   background-color: var(--color-input);
   text-align: center; }
+
+.form-input:focus {
+  outline: 0; }
+
+.form-input:focus-visible {
+  outline: 2px dashed var(--color-button); }
 
 /**
  * More sensible default box-sizing:

@@ -501,6 +501,9 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.invisible {
+  visibility: hidden;
+}
 .absolute {
   position: absolute;
 }
@@ -515,9 +518,6 @@ video {
 .my-32 {
   margin-top: 8rem;
   margin-bottom: 8rem;
-}
-.mr-6 {
-  margin-right: 1.5rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -603,6 +603,10 @@ video {
 .last\:mr-0:last-child {
   margin-right: 0px;
 }
+.focus-visible\:border-sky-500:focus-visible {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity));
+}
 @media (min-width: 640px) {
 
   .sm\:w-3\/4 {
@@ -624,6 +628,14 @@ video {
   .md\:mx-3 {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+  }
+
+  .md\:mr-6 {
+    margin-right: 1.5rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:flex {
