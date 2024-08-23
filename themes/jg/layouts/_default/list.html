@@ -5,15 +5,16 @@
       {{ $cobogo := site.GetPage "paintings/cobogo" }}
       {{ if $cobogo }}
         <div>
-          <h3>{{ $cobogo.Title }}</h3>
-          <p>{{ $cobogo.Params.year }}</p>
-          <p>{{ $cobogo.Params.description }}</p>
+          <h3 class="text-3xl font-medium">{{ $cobogo.Title }}</h3>
+          <p class="text-3xl  font-extralight">{{ $cobogo.Params.year }}</p>
+          <p class="text-base sm:text-xl md:text-2xl mt-4">{{ $cobogo.Params.description }}</p>
         </div>
         <div>
           {{ range $cobogo.Pages.ByDate }}
             <div class="painting">
-                <h3>{{ .Title }}</h3> <!-- Painting title -->
-                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}"> <!-- Painting image -->
+                <h3>{{ .Title }}</h3> 
+                {{ $image := resources.Get .Params.image }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}"> <!-- Painting image -->
             </div>
           {{ end }}
         </div>
