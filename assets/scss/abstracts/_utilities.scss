@@ -3,3 +3,7 @@
   top: -9999px !important;
   left: -9999px !important;
 }
+
+.flow>*+* {
+  margin-top: var(--flow-space, 1em);
+}

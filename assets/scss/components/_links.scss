@@ -1,0 +1,9 @@
+.page-link {
+  text-decoration: underline;
+  color: var(--color-button);
+}
+
+.page-link:hover {
+  cursor: pointer;
+  color: var(--color-dark);
+}

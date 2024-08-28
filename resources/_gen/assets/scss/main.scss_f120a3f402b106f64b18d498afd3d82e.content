@@ -21,6 +21,9 @@
   top: -9999px !important;
   left: -9999px !important; }
 
+.flow > * + * {
+  margin-top: var(--flow-space, 1em); }
+
 header,
 footer {
   font-weight: 300; }
@@ -109,6 +112,18 @@ header nav ul {
 
 .form-input:focus-visible {
   outline: 2px dashed var(--color-button); }
+
+.page-link {
+  text-decoration: underline;
+  color: var(--color-button); }
+
+.page-link:hover {
+  cursor: pointer;
+  color: var(--color-dark); }
+
+@media (max-width: 768px) {
+  #about-content p:last-child {
+    margin-top: 1rem; } }
 
 /**
  * More sensible default box-sizing:
