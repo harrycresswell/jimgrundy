@@ -519,6 +519,9 @@ video {
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
+.mb-32 {
+  margin-bottom: 8rem;
+}
 .mt-10 {
   margin-top: 2.5rem;
 }

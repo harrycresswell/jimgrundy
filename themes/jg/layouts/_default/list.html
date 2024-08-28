@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h1 class="md:mx-24 text-3xl font-medium">{{ .Title }}</h1>
-  <section class="md:mx-24 md:flex mt-28">
-    <div>
+  <section class="md:mx-24 mt-28">
+    <div class="mb-32">
       {{ $cobogo := site.GetPage "paintings/cobogo" }}
       {{ if $cobogo }}
         <div class="sm:w-3/4 lg:w-1/2 font-extralight">
@@ -9,8 +9,27 @@
           <p class="text-3xl  font-extralight">{{ $cobogo.Params.year }}</p>
           <p class="text-base sm:text-xl md:text-2xl mt-4">{{ $cobogo.Params.description }}</p>
         </div>
-        <div data-layout="33x3" class="cugrid mt-24 flow">
+        <div data-layout="33x3" class="cugrid mt-24">
           {{ range $cobogo.Pages.ByDate }}
+            <div class="painting">
+              {{ $image := resources.Get .Params.image }}
+              <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}"> <!-- Painting image -->
+              <h3 class="font-extralight text-xl mt-4">{{ .Title }}</h3>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+    <div>
+      {{ $south_beach := site.GetPage "paintings/south_beach" }}
+      {{ if $south_beach }}
+        <div class="sm:w-3/4 lg:w-1/2 font-extralight">
+          <h3 class="text-3xl font-medium">{{ $south_beach.Title }}</h3>
+          <p class="text-3xl  font-extralight">{{ $south_beach.Params.year }}</p>
+          <p class="text-base sm:text-xl md:text-2xl mt-4">{{ $south_beach.Params.description }}</p>
+        </div>
+        <div data-layout="33x3" class="cugrid mt-24 flow">
+          {{ range $south_beach.Pages.ByDate }}
             <div class="painting">
               {{ $image := resources.Get .Params.image }}
               <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}"> <!-- Painting image -->
