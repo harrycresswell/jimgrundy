@@ -121,6 +121,10 @@ header nav ul {
   cursor: pointer;
   color: var(--color-dark); }
 
+@media (max-width: 768px) {
+  #about-content p:last-child {
+    margin-top: 1rem; } }
+
 /**
  * More sensible default box-sizing:
  * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
