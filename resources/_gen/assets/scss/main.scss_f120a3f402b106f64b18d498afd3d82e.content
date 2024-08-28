@@ -182,7 +182,7 @@ EXCEPTIONS
 /* Three column when space permits */
 .cugrid[data-layout='33x3'] {
   --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 33vw, 18rem); }
+  --grid-min-item-size: clamp(16rem, 33vw, 10rem); }
 
 /**
  * More sensible default box-sizing:
