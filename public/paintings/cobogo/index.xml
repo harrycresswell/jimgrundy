@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/paintings/cobogo/cobogo_no2/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Cobogo No.3</title>
+      <link>http://localhost:1313/paintings/cobogo/cobogo_no3/</link>
+      <pubDate>Fri, 23 Aug 2024 11:58:27 +0100</pubDate>
+      <guid>http://localhost:1313/paintings/cobogo/cobogo_no3/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
