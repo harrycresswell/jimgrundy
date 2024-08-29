@@ -26,6 +26,7 @@
   top: -9999px !important;
   left: -9999px !important; }
 
+<<<<<<< HEAD
 #text-hover:hover h3 {
   display: none; }
 
@@ -58,6 +59,10 @@ Utopia fluid space
   --space-2xl-3xl: clamp(4.00rem, calc(2.78rem + 6.09vw), 7.50rem);
   /* Custom pairs */
   --space-s-l: clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem); }
+=======
+.flow > * + * {
+  margin-top: var(--flow-space, 1em); }
+>>>>>>> master
 
 header,
 footer {
@@ -148,6 +153,7 @@ header nav ul {
 .form-input:focus-visible {
   outline: 2px dashed var(--color-button); }
 
+<<<<<<< HEAD
 /* 
 AUTO GRID
 Related Every Layout: https://every-layout.dev/layouts/grid/
@@ -195,6 +201,19 @@ EXCEPTIONS
 .cugrid[data-layout='33x3'] {
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 33vw, 18rem); }
+=======
+.page-link {
+  text-decoration: underline;
+  color: var(--color-button); }
+
+.page-link:hover {
+  cursor: pointer;
+  color: var(--color-dark); }
+
+@media (max-width: 768px) {
+  #about-content p:last-child {
+    margin-top: 1rem; } }
+>>>>>>> master
 
 /**
  * More sensible default box-sizing:
