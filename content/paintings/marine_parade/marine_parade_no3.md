@@ -5,6 +5,6 @@ draft = false
 year = '2022'
 description = 'Acrylic on canvas'
 size = '91x91cm'
-status = 'Private Collection'
+gallery = 'Private Collection'
 image = 'images/paintings/marine_parade/marine_parade_no3_2022.jpg'
 +++
