@@ -9,7 +9,7 @@
           <p class="text-3xl font-extralight">{{ $cobogo.Params.year }}</p>
           <p class="text-base sm:text-xl md:text-2xl mt-4">{{ $cobogo.Params.description }}</p>
         </div>
-        <div data-layout="33x3" class="cugrid mt-24">
+        <div data-layout="33x3" class="cugrid cugrid-list mt-24">
           {{ range $cobogo.Pages.ByDate }}
             <a href="{{ .Permalink }}" id="text-hover">
               <div class="painting">
@@ -31,7 +31,7 @@
           <p class="text-3xl font-extralight">{{ $south_beach.Params.year }}</p>
           <p class="text-base sm:text-xl md:text-2xl mt-4">{{ $south_beach.Params.description }}</p>
         </div>
-        <div data-layout="33x3" class="cugrid mt-24">
+        <div data-layout="33x3" class="cugrid cugrid-list mt-24">
           {{ range $south_beach.Pages.ByDate }}
           <a href="{{ .Permalink }}" id="text-hover">
             <div class="painting">
@@ -53,7 +53,7 @@
           <p class="text-3xl font-extralight">{{ $marine_parade.Params.year }}</p>
           <p class="text-base sm:text-xl md:text-2xl mt-4">{{ $marine_parade.Params.description }}</p>
         </div>
-        <div data-layout="33x3" class="cugrid mt-24">
+        <div data-layout="33x3" class="cugrid cugrid-list mt-24">
           {{ range $marine_parade.Pages.ByDate }}
           <a href="{{ .Permalink }}" id="text-hover">
             <div class="painting">
@@ -75,7 +75,7 @@
           <p class="text-3xl font-extralight">{{ $figures.Params.year }}</p>
           <p class="text-base sm:text-xl md:text-2xl mt-4">{{ $figures.Params.description }}</p>
         </div>
-        <div data-layout="33x3" class="cugrid mt-24">
+        <div data-layout="33x3" class="cugrid cugrid-list mt-24">
           {{ range $figures.Pages.ByDate }}
           <a href="{{ .Permalink }}" id="text-hover">
             <div class="painting">

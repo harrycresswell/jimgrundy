@@ -176,7 +176,7 @@ to change how empty grid tracks are handled.
 /* Media query to cap the grid at 3 columns maximum */
 @media (min-width: 48rem) {
   /* Adjust the min-width as needed for responsiveness */
-  .cugrid {
+  .cugrid-list {
     grid-template-columns: repeat(3, 1fr); } }
 
 /* 
