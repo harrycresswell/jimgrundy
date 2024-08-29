@@ -7,4 +7,10 @@
   --color-white: #fff;
   --color-highlight: #F6F6F6;
   --color-background: #F5FDFC;
+
+  /* Grid */
+  --gutter: var(--space-s-m);
+  /* Effects */
+  --border-radius: 0; // Set a rem value to add border radius to buttons, form elements, cards, callouts and accordians. 
+  --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
 }

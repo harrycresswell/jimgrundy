@@ -9,7 +9,7 @@ weight = 10
 
 [[menus.main]]
 name = 'Paintings'
-pageRef = '/page/paintings'
+pageRef = '/paintings'
 weight = 20
 
 [[menus.main]]

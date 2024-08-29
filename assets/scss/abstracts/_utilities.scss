@@ -4,6 +4,16 @@
   left: -9999px !important;
 }
 
+#text-hover:hover {
+  h3 {
+    display: none;
+  }
+
+  p {
+    display: block;
+  }
+}
+
 .flow>*+* {
   margin-top: var(--flow-space, 1em);
 }
