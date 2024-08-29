@@ -6,5 +6,6 @@ year = '2020'
 description = 'Acrylic on canvas'
 size = '76x76cm'
 gallery = 'Private Collection'
+private = true
 image = 'images/paintings/figures/figure_no7_2020.jpg'
 +++

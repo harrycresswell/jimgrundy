@@ -137,6 +137,9 @@ header nav ul {
   opacity: 0.8;
   cursor: pointer; }
 
+.button-unavailable {
+  color: var(--color-button); }
+
 .form {
   font-size: var(--font-size-base); }
 
