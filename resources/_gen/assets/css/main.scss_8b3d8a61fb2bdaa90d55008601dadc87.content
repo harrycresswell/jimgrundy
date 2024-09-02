@@ -578,6 +578,9 @@ video {
 .min-h-\[350px\] {
   min-height: 350px;
 }
+.w-6\/12 {
+  width: 50%;
+}
 .w-full {
   width: 100%;
 }
@@ -734,6 +737,10 @@ video {
 
   .md\:w-6\/12 {
     width: 50%;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .md\:flex-col {
