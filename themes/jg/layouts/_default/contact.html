@@ -9,7 +9,7 @@
   </section>
   <section class="sm:mx-16 md:mx-24 mt-28 flex mx-2 justify-center">
     {{ $image := resources.Get "images/jim-studio.jpg" }}
-    <img src="{{ $image.RelPermalink }}" class="md:w-2/4 my-16 md:my-32 object-cover" alt="Jim in studio">
+    <img src="{{ $image.RelPermalink }}" class="md:w-8/12 my-16 md:my-32 object-cover" alt="Jim in studio">
   </section>
    {{ partial "email-capture.html" . }}
 {{ end }}
