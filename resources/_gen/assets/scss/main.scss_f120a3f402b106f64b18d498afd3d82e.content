@@ -137,6 +137,9 @@ header nav ul {
   opacity: 0.8;
   cursor: pointer; }
 
+.button-unavailable {
+  color: var(--color-button); }
+
 .form {
   font-size: var(--font-size-base); }
 
@@ -176,7 +179,7 @@ to change how empty grid tracks are handled.
 /* Media query to cap the grid at 3 columns maximum */
 @media (min-width: 48rem) {
   /* Adjust the min-width as needed for responsiveness */
-  .cugrid {
+  .cugrid-list {
     grid-template-columns: repeat(3, 1fr); } }
 
 /* 
