@@ -4,9 +4,5 @@
 {{ $localSCSS := resources.Get "scss/main.scss" | toCSS | minify }}
 {{ $tailwindCSS := resources.Get "scss/styles.scss" | toCSS | postCSS (dict "config" "themes/jg/assets/scss/postcss.config.js") | minify }}
 
-{{/*  <link rel="stylesheet" href="{{ $localSCSS.Permalink }}" />
-<link rel="stylesheet" href="{{ $tailwindCSS.Permalink }}" />  */}}
-
-{{ $combinedCSS := slice $localSCSS $tailwindCSS | resources.Concat "styles.css" }}
-
-<link rel="stylesheet" href="{{ $combinedCSS.Permalink }}" />
+<link rel="stylesheet" href="{{ $localSCSS.Permalink }}" />
+<link rel="stylesheet" href="{{ $tailwindCSS.Permalink }}" />
