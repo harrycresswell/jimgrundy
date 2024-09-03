@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ $localSCSS := resources.Get "scss/main.scss" | toCSS }}
-{{ $tailwindCSS := resources.Get "scss/styles.scss" | toCSS | postCSS (dict "config" "themes/jg/assets/scss/postcss.config.js") }}
-{{ $combinedCSS := slice $localSCSS $tailwindCSS | resources.Concat "styles.css" | minify }}
+{{ $tailwindCSS := resources.Get "scss/styles.scss" | toCSS }}
+{{ $tailwindConfig := $tailwindCSS | postCSS (dict "config" "themes/jg/assets/scss/postcss.config.js") }}
+{{ $combinedCSS := slice $localSCSS $tailwindConfig | resources.Concat "styles.css" | minify }}
 <link rel="stylesheet" href="{{ $combinedCSS.Permalink }}" />
