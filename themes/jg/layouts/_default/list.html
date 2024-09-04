@@ -17,8 +17,10 @@
                 {{ range . }}
                   <a href="{{ .Permalink }}" id="text-hover">
                     <div class="painting">
-                      {{ $image := resources.Get .Params.image }}
-                      <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}"> <!-- Painting image -->
+                      {{ $title := .Title }}
+                      {{ with .Resources.GetMatch "*.jpg" }}
+                        <img src="{{ .RelPermalink }}" alt="{{ $title }}"> <!-- Painting image -->
+                      {{ end }}
                       <h3 class="font-extralight text-lg md:text-xl mt-4">{{ .Title }}</h3>
                       <p class="font-extralight text-lg md:text-xl mt-4 hidden">{{ .Description }}</p>
                     </div>
@@ -40,10 +42,10 @@
           {{ range . }}
             <a href="{{ .Permalink }}" id="text-hover">
               <div class="painting">
-    
-                {{ $image := resources.Get .Params.image }}
-                <img src="{{ $image }}" alt="{{ .Title }}"> <!-- Painting image -->
-
+                {{ $title := .Title }}
+                {{ with .Resources.GetMatch "*.jpg" }}
+                  <img src="{{ .RelPermalink }}" alt="{{ $title }}"> <!-- Painting image -->
+                {{ end }}
                 <h2 class="font-extralight text-lg md:text-xl mt-4">{{ .Title }}</h2>
                 <p class="font-extralight text-lg md:text-xl mt-4 hidden">{{ .Description }}</p>
               </div>
