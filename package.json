@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss assets/css/main.css -o static/css/main.css",
+    "build:css": "postcss assets/scss/main.scss -o static/css/main.css",
     "build": "hugo && npm run build:css",
     "start": "hugo server -D && npm run build:css --watch"
   },
