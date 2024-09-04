@@ -1,6 +1,6 @@
 {{ define "main" }}
   <h1 class="mx-2 md:mx-24 text-3xl font-medium">{{ .Title }}</h1>
-    {{/*  Return a collection of section pages, one for each immediate descendant section of the given page.  */}}
+    {{/* Return a collection of section pages, one for each immediate descendant section of the given page. */}}
     {{ if .Sections }} 
       <section class="mx-2 md:mx-24 mt-28">
         {{ range .Pages.Reverse }}    
@@ -18,8 +18,9 @@
                   <a href="{{ .Permalink }}" id="text-hover">
                     <div class="painting">
                       {{ $title := .Title }}
+                      {{/*  For .Page scoped resources use [Page Resources](https://gohugo.io/content-management/page-resources/) methods. Eg.https://gohugo.io/methods/page/resources/#getmatch  */}}
                       {{ with .Resources.GetMatch "*.jpg" }}
-                        <img src="{{ .RelPermalink }}" alt="{{ $title }}"> <!-- Painting image -->
+                        <img src="{{ .RelPermalink }}" alt="{{ $title }}">
                       {{ end }}
                       <h3 class="font-extralight text-lg md:text-xl mt-4">{{ .Title }}</h3>
                       <p class="font-extralight text-lg md:text-xl mt-4 hidden">{{ .Description }}</p>
@@ -44,7 +45,7 @@
               <div class="painting">
                 {{ $title := .Title }}
                 {{ with .Resources.GetMatch "*.jpg" }}
-                  <img src="{{ .RelPermalink }}" alt="{{ $title }}"> <!-- Painting image -->
+                  <img src="{{ .RelPermalink }}" alt="{{ $title }}">
                 {{ end }}
                 <h2 class="font-extralight text-lg md:text-xl mt-4">{{ .Title }}</h2>
                 <p class="font-extralight text-lg md:text-xl mt-4 hidden">{{ .Description }}</p>
