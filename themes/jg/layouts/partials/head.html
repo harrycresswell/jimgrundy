@@ -1,8 +1,4 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ $localSCSS := resources.Get "scss/main.scss" | toCSS | minify }}
-{{ $tailwindCSS := resources.Get "scss/styles.scss" | toCSS | postCSS (dict "config" "themes/jg/assets/scss/postcss.config.js") | minify }}
-
-<link rel="stylesheet" href="{{ $localSCSS.Permalink }}" />
-<link rel="stylesheet" href="{{ $tailwindCSS.Permalink }}" />
+{{ partial "head/css.html" . }}
