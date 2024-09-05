@@ -1,3 +1,5 @@
+_snippets_imports:
+  hugo: false
 paths:
   data: data
   collections: content
