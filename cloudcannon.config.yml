@@ -22,31 +22,6 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  page:
-    path: content/page
-    output: true
-    description: These are top level single pages, about, contact and so on.
-    icon: notes
-    documentation:
-      url:
-      text:
-      icon:
-    preview:
-      text:
-      subtext:
-      icon:
-      icon_color:
-      image:
-      metadata:
-      gallery:
-    _editables:
-    _inputs:
-    _select_data:
-    _structures:
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    schemas:
   paintings:
     path: content/paintings
     output: true
