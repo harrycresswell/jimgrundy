@@ -1,0 +1,63 @@
+paths:
+  data: data
+  collections: content
+  layouts: layouts
+  static: static
+  uploads: static/uploads
+  includes: layouts
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  pages:
+    path: content
+    output: true
+    filter: strict
+    parse_branch_index: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  page:
+    path: content/page
+    output: true
+    description: These are top level single pages, about, contact and so on.
+    icon: notes
+    documentation:
+      url:
+      text:
+      icon:
+    preview:
+      text:
+      subtext:
+      icon:
+      icon_color:
+      image:
+      metadata:
+      gallery:
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+  paintings:
+    path: content/paintings
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  layout:
+    type: text
+    hidden: true
+    cascade: true
+data_config: {}
+timezone: Etc/UTC
