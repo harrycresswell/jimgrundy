@@ -46,9 +46,11 @@ collections_config:
       _inputs:
         painting_series:
           type: text
+          comment: Add the name of the series (must be lowercase and multiple words seperated with an underscore).
         number: 
           type: number
           label: Painting number
+          comment: Add the number of the painting in the series.
     # create:
     #   path: '{painting_series}/{painting_series}_no{number}/index.md'
     #   _inputs:
