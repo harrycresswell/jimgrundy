@@ -1,5 +1,3 @@
-_snippets_imports:
-  hugo: false
 paths:
   data: data
   collections: content
@@ -17,55 +15,55 @@ paths:
 collections_config:
   pages:
     path: content
+    icon: notes
     output: true
     filter: strict
     parse_branch_index: true
-    icon: notes
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
   paintings:
     path: content/paintings
-    output: true
     icon: notes
+    output: true
+    create:
+      path: '{painting_series}/{painting_series}_no{number}/index.md'
+      _inputs:
+        painting_series:
+          type: text
+          comment: >-
+            Add the name of the series (must be lowercase and multiple words
+            seperated by an underscore).
+          cascade: true
+        number:
+          type: number
+          label: Painting number
+          comment: Add the number of the painting in the series.
+          cascade: true
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
     schemas:
       default:
         path: .cloudcannon/schemas/paintings.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
         _inputs:
           image:
             type: image
             options:
               paths:
-                static: ''
                 uploads: '[base_path]/'
-    create:
-      path: '{painting_series}/{painting_series}_no{number}/index.md'
-      _inputs:
-        painting_series:
-          type: text
-          comment: Add the name of the series (must be lowercase and multiple words seperated with an underscore).
-        number: 
-          type: number
-          label: Painting number
-          comment: Add the number of the painting in the series.
-    # create:
-    #   path: '{painting_series}/{painting_series}_no{number}/index.md'
-    #   _inputs:
-    #     painting_series:
-    #       type: select
-    #       options:
-    #         values:
-    #           - cobogo
-    #           - figures
-    #     number: 
-    #       type: number
+                static: ''
+            cascade: true
 _inputs:
   layout:
     type: text
     hidden: true
     cascade: true
-data_config: {}
 timezone: Europe/London
+_snippets_imports:
+  hugo: false
