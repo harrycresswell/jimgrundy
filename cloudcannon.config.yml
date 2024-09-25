@@ -41,17 +41,17 @@ collections_config:
               paths:
                 static: ''
                 uploads: '[base_path]/'
-    create:
-      path: '{painting_series}/{painting_series}_no{number}/index.md'
-      _inputs:
-        painting_series:
-          type: select
-          options:
-            values:
-              - cobogo
-              - figures
-        number: 
-          type: number
+    # create:
+    #   path: '{painting_series}/{painting_series}_no{number}/index.md'
+    #   _inputs:
+    #     painting_series:
+    #       type: select
+    #       options:
+    #         values:
+    #           - cobogo
+    #           - figures
+    #     number: 
+    #       type: number
 _inputs:
   layout:
     type: text
