@@ -41,8 +41,7 @@ collections_config:
               paths:
                 static: ''
                 uploads: '[base_path]/'
-    create:
-      path: 'index.md'
+    # create:
     #   path: '{painting_series}/{painting_series}_no{number}/index.md'
     #   _inputs:
     #     painting_series:
