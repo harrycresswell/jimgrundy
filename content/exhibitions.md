@@ -1,5 +1,6 @@
 +++
-title = 'Exhibitions'
-date = 2024-08-05T16:35:09+01:00
+_hidden: true
+title = "Exhibitions"
+date = 2024-08-05T15:35:09.000Z
 draft = false
 +++
