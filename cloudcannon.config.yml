@@ -26,6 +26,9 @@ collections_config:
     path: content/paintings
     icon: notes
     output: true
+    add_options:
+      - name: Add painting
+        editor: data
     create:
       path: '{painting_series}/{painting_series}_no{number}/index.md'
       _inputs:
