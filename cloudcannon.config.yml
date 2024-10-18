@@ -29,6 +29,8 @@ collections_config:
     add_options:
       - name: Add painting
         editor: data
+    # Disable add button to prevent new folders from being created
+    disable_add_folder: true
     create:
       path: '{painting_series}/{painting_series}_no{number}/index.md'
       _inputs:
