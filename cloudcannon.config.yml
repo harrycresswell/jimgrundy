@@ -14,7 +14,7 @@ paths:
   config: ''
 collections_config:
   pages:
-    path: content
+    path: content/pages
     icon: notes
     output: true
     filter: strict
