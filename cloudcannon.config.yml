@@ -47,6 +47,13 @@ collections_config:
           label: Painting number
           comment: Add the number of the painting in the series.
           cascade: true
+        image:
+          type: image
+          options:
+            paths:
+              uploads: '[base_path]/'
+              static: ''
+          cascade: true
     disable_add: false
     # Disable add button to prevent new folders from being created
     disable_add_folder: true
@@ -60,13 +67,13 @@ collections_config:
         remove_extra_inputs: true
         icon: notes
         _inputs:
-          image:
-            type: image
-            options:
-              paths:
-                uploads: '[base_path]/'
-                static: ''
-            cascade: true
+          # image:
+          #   type: image
+          #   options:
+          #     paths:
+          #       uploads: '[base_path]/'
+          #       static: ''
+          #   cascade: true
 _inputs:
   layout:
     type: text
