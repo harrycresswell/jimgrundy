@@ -32,6 +32,7 @@ collections_config:
     # Hide the content and visual area, instead only show front matter fields in editor
     _enabled_editors:
       - data
+      - visual
     create:
       path: '{painting_series}/{painting_series}_no{number}/index.md'
       _inputs:
