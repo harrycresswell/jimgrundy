@@ -20,7 +20,7 @@ collections_config:
     filter: strict
     parse_branch_index: true
     disable_add: false
-    disable_add_folder: false
+    disable_add_folder: true
     disable_file_actions: false
   paintings:
     path: content/paintings
