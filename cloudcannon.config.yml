@@ -32,6 +32,7 @@ collections_config:
       - name: Add series info
         editor: data
         schema: series_info
+        icon: add
     # Hide the content and visual area, instead only show front matter fields in editor
     _enabled_editors:
       - visual
