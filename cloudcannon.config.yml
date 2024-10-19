@@ -74,7 +74,7 @@ collections_config:
         path: .cloudcannon/schemas/series-info.md
         # Default path when creating new files in this schema
         create:
-          path: '[relative_base_path]/{title|slugify}.md'
+          path: '[base_path]/_index.md'
 _inputs:
   layout:
     type: text
