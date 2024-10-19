@@ -29,6 +29,9 @@ collections_config:
     add_options:
       - name: Add painting
         editor: data
+    # Hide the content and visual area, instead only show front matter fields in editor
+    _enabled_editors:
+      - data
     create:
       path: '{painting_series}/{painting_series}_no{number}/index.md'
       _inputs:
