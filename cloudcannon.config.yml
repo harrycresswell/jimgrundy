@@ -75,6 +75,9 @@ collections_config:
         # Default path when creating new files in this schema
         create:
           path: '{painting_series}/_index.md'
+        # Hide the content and visual area, instead only show front matter fields in editor
+        _enabled_editors:
+          - data
 _inputs:
   layout:
     type: text
