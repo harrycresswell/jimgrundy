@@ -56,7 +56,7 @@ collections_config:
           cascade: true
     disable_add: false
     # Disable add button to prevent new folders from being created
-    disable_add_folder: true
+    disable_add_folder: false
     disable_file_actions: false
     schemas:
       default:
